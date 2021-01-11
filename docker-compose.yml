@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  murmur:
+    build: .
+    ports:
+      - "64738:64738"
+      - "50051:50051"
