@@ -41,11 +41,5 @@ volumes:
 ### gRPC
 `gRPC` is enabled by default by connecting to: `127.0.0.1:50051`
 
-
-## TODO
-* Custom `murmur.ini`
-* Virtual servers
-* SuperUser setup
-
 ## Resources
 * https://github.com/mumble-voip/mumble/blob/master/docs/dev/build-instructions/build_linux.md
