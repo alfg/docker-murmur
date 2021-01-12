@@ -28,7 +28,7 @@ server: localhost
 port:   64738
 ```
 
-Direct Link: [mumble://user:password@localhost:50051](mumble://user:password@localhost:50051)
+Direct Link: `mumble://localhost:64738`
 
 ### Custom `murmur.ini`
 If you wish to use your own `murmur.ini`, mount it as a volume in your `docker-compose` file or `docker` command:
