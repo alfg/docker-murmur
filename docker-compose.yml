@@ -6,3 +6,5 @@ services:
     ports:
       - "64738:64738"
       - "50051:50051"
+    volumes:
+      - ./murmur.ini:/etc/murmur/murmur.ini

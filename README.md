@@ -31,7 +31,16 @@ port:   64738
 Direct Link: [mumble://user:password@localhost:50051](mumble://user:password@localhost:50051)
 
 ### Custom `murmur.ini`
-TODO
+If you wish to use your own `murmur.ini`, mount it as a volume in your `docker-compose` file or `docker` command:
+
+```yaml
+volumes:
+  - ./murmur.ini:/etc/murmur/murmur.ini
+``` 
+
+### gRPC
+`gRPC` is enabled by default by connecting to: `127.0.0.1:50051`
+
 
 ## TODO
 * Custom `murmur.ini`

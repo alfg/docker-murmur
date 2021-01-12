@@ -1,3 +1,5 @@
+# THIS CMAKE BUILD IS STILL EXPERIMENTAL!
+
 ARG MUMBLE_VERSION=master
 
 ###############################
@@ -43,9 +45,9 @@ RUN cd mumble && mkdir build && cd build && \
     cmake -Dclient=OFF -DCMAKE_BUILD_TYPE=Release -Dgprc=ON -Dstatic=ON .. && \
     make -j $(nproc)
 
-#########################
-# Build the relase image.
-FROM ubuntu:latest
+##########################
+# Build the release image.
+FROM ubuntu:20.04
 LABEL MAINTAINER Alfred Gutierrez <alf.g.jr@gmail.com>
 
 RUN adduser murmur

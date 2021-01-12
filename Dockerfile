@@ -39,9 +39,9 @@ RUN git clone --branch ${MUMBLE_VERSION} https://github.com/mumble-voip/mumble.g
 RUN cd mumble && qmake -recursive main.pro CONFIG+="no-client grpc" && \
     make release
 
-#########################
-# Build the relase image.
-FROM ubuntu:latest
+##########################
+# Build the release image.
+FROM ubuntu:20.04
 LABEL MAINTAINER Alfred Gutierrez <alf.g.jr@gmail.com>
 
 RUN adduser murmur
